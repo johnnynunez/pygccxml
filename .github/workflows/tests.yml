@@ -147,6 +147,15 @@ jobs:
             castxml-epic: 0
             cppstd: "-std=c++17"
 
+          # UBUNTU 24.04 - CASTXML EPIC 1
+          - os: ubuntu-24.04-arm
+            arch: x86_64
+            compiler: clang++
+            clang-version: 16
+            python-version: "3.13"
+            castxml-epic: 1
+            cppstd: "-std=c++11"
+
           # MACOS
           - os: macos-13
             compiler: clang++
