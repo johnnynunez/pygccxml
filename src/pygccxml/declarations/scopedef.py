@@ -89,6 +89,8 @@ class matcher(object):
         elif not answer:
             raise runtime_errors.declaration_not_found_t(decl_matcher)
         else:
+            for x in answer:
+                print("DEBUG", type(x), x, x.name)
             raise runtime_errors.multiple_declarations_found_t(decl_matcher)
 
 
