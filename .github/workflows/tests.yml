@@ -149,7 +149,7 @@ jobs:
 
           # UBUNTU 24.04 - CASTXML EPIC 1
           - os: ubuntu-24.04-arm
-            arch: x86_64
+            arch: aarch64
             compiler: clang++
             clang-version: 16
             python-version: "3.13"
