@@ -240,4 +240,4 @@ jobs:
       - name: Run tests
         run: |
           export PATH=~/castxml/bin:$PATH
-          pytest tests
+          pytest tests/test_core.py

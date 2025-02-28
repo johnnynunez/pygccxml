@@ -66,3 +66,7 @@ docs = [
 examples = [
   "notebook",
 ]
+[tool.pytest.ini_options]
+  pythonpath = [
+    'src'
+]
