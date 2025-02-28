@@ -90,7 +90,7 @@ class matcher(object):
             raise runtime_errors.declaration_not_found_t(decl_matcher)
         else:
             for x in answer:
-                print("DEBUG", type(x), x, x.name)
+                print("DEBUG", type(x), x, x.name, id(x))
             raise runtime_errors.multiple_declarations_found_t(decl_matcher)
 
 
