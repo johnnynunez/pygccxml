@@ -419,7 +419,11 @@ class project_reader_t(object):
     @staticmethod
     def _join_top_namespaces(main_ns_list, other_ns_list):
         answer = main_ns_list[:]
+        for n in main_ns_list:
+            print("_join_top_namespaces", n, n.name)
+        print("--------------")
         for other_ns in other_ns_list:
+            print("_join_top_namespaces", other_ns, other_ns.name)
             main_ns = pygccxml.declarations.find_declaration(
                 answer,
                 decl_type=pygccxml.declarations.namespace_t,

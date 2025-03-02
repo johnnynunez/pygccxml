@@ -209,8 +209,8 @@ class scanner_t(xml.sax.handler.ContentHandler):
 
         self.__xml_generator_from_xml_file = None
 
-        with open(self.xml_file, "r") as f:
-            print(f.read())
+        # with open(self.xml_file, "r") as f:
+        #     print(f.read())
 
     @property
     def xml_generator_from_xml_file(self):

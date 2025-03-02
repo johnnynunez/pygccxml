@@ -222,9 +222,9 @@ def global_ns(request):
 @pytest.mark.parametrize(
     "global_ns",
     [
-        "global_ns_fixture_all_at_once1",
+        # "global_ns_fixture_all_at_once1",
         # "global_ns_fixture_all_at_once2",
-        # "global_ns_fixture_file_by_file1",
+        "global_ns_fixture_file_by_file1",
         # "global_ns_fixture_file_by_file2",
     ],
     indirect=True,
